@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from rest_framework import viewsets
 from rest_framework.response import Response
 from . import serializers, models
@@ -10,3 +10,4 @@ class PortfolioViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return models.Portfolio.objects.filter(user=self.request.user).all()
+
