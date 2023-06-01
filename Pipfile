@@ -12,6 +12,8 @@ django-cors-headers = "*"
 djoser = "*"
 drf-yasg = "*"
 python-decouple = "*"
+wheel = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
